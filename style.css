@@ -1,0 +1,246 @@
+    body {
+        font-family: sans-serif;
+        background-color: #000;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 98vh;
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        height: 95%;
+        width: 95%;
+        box-shadow: 0 0 146px 21px rgba(219, 217, 219, 0.55);
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto 0px;
+    }
+
+    section a {
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        font-size: 4.8em;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    section.parent {
+        background-image: url("https://images.unsplash.com/photo-1572376069663-5f52bdd158f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+    }
+
+    section.parent a {
+        padding-top: 50px;
+        font-weight: 200;
+        width: 440px;
+        height: 200px;
+        line-height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -220px;
+        margin-top: -100px;
+        margin-top: -150px;
+    }
+
+    section.parent a:before {
+        content: attr(data-content);
+        color: #465154;
+        transition: all .5s ease-in;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding-top: 50px;
+        -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        /* I try multiple time to get this result */
+        animation: montTristeza 0.5s forwards linear;
+        -webkit-animation: montTristeza 0.5s forwards linear;
+        -moz-animation: montTristeza 0.5s forwards linear;
+    }
+
+    section.parent a:hover:before {
+        animation: montDa 0.9s forwards linear;
+        -webkit-animation: montDa 0.9s forwards linear;
+        -moz-animation: montDa 0.9s forwards linear;
+    }
+
+    @keyframes montTristeza {
+
+        /* I copy paste the clip path */
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+    @-webkit-keyframes montTristeza {
+
+        /* I copy paste the clip path */
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+    @-moz-keyframes montTristeza {
+
+        /* I copy paste the clip path */
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+
+    @keyframes montDa {
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+    @-webkit-keyframes montDa {
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+    @-moz-keyframes montDa {
+        0% {
+            -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+            clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+        }
+
+        25% {
+            -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+            clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+        }
+
+        50% {
+            -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+            clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+        }
+
+        75% {
+            -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+            clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+        }
+
+        100% {
+            -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+            clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+        }
+    }
+
+    /* Thanks dont's forget subscribe and like Good Bye :D  */
